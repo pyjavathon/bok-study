@@ -31,7 +31,7 @@ public class PriorityQueueEx {
 			}
 			if(!pQ.isEmpty())answer+=pQ.poll();
 		}
-		return answer;
+		return answer;//
 	}
 
 	public static void main(String[] args) {
