@@ -9,32 +9,36 @@ public class Back10431 {
 
 	public static void main(String[] args) throws IOException{
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-
-		int T = Integer.parseInt(in.readLine());
-		StringBuilder sb= new StringBuilder();
+		
+		int HangNum = Integer.parseInt(in.readLine());
+		
 		StringTokenizer st;
-		for(int tc=1;tc<=T;tc++) {
+		
+		StringBuilder sb = new StringBuilder();
+		
+		for(int hang=1;hang<=HangNum;hang++) {
+			
 			st = new StringTokenizer(in.readLine()," ");
-			int[] arr = new int[20];
-
-
+			int[] heights = new int[20];
+			
 			sb.append(st.nextToken()).append(" ");
 			int cnt = 0;
-			for(int i=0;i<arr.length;i++) {
-				arr[i] = Integer.parseInt(st.nextToken());
+			
+			for(int i=0;i<heights.length;i++) {
+				heights[i] = Integer.parseInt(st.nextToken());
 			}
-
-			for(int i=0;i<arr.length;i++) {
+			
+			for(int i=0;i<heights.length;i++) {
 				for(int j=0;j<i;j++) {
-					if(arr[j] > arr[i]) {
-						cnt++;
-					}
+					if(heights[j]>heights[i]) cnt++;
 				}
 			}
-			sb.append(cnt).append('\n');
+			sb.append(cnt).append("\n");
+			
+			
 		}
+		
 		System.out.println(sb);
-
 	}
 
 }
