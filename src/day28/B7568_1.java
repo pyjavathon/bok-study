@@ -7,7 +7,7 @@ import java.util.StringTokenizer;
 
 public class B7568_1 {
 	
-	public void main(String[] args) throws IOException{
+	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
 		int N = Integer.parseInt(br.readLine());
