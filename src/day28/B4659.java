@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 
 public class B4659 {
 	
-	public void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
 		StringBuilder sb = new StringBuilder();
