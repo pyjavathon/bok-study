@@ -18,6 +18,7 @@ public class B14719 {
 		
 		int[] h = new int[W];
 		for(int i=0;i<W;i++) h[i] = Integer.parseInt(st.nextToken());
+		//
 		
 		int rain = 0;
 		
